@@ -11,9 +11,5 @@ int main()
         {
             cout<<"Square root of given number is: "<<i;
         }
-        else 
-        {
-            break;
-        }
     }
 }

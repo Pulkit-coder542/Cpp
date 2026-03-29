@@ -5,7 +5,7 @@ class Student
 {
     private:
     int rollno;
-    int class;
+    int Class;
     char name[20];
     class Address
     {
@@ -26,7 +26,7 @@ class Student
         }
         void showAddress()
         {
-            cout<<"\n"<<houseno<<endl;
+            cout<<"\n"<<Houseno<<endl;
             cout<<street<<" "<<city;
             cout<<" "<<pincode<<endl;
             cout<<state;
@@ -47,7 +47,7 @@ class Student
         cout<<"Student Data"<<endl;
         cout<<rollno<<" ";
         cout<<name<<" ";
-        cout<<add.showData();
+        add.showAddress();
 
     }
 };
@@ -55,7 +55,7 @@ int main()
 {
     Student s1;
     s1.setRollno(100);
-    s1.setName(Rahul);
+    s1.setName("Rahul");
     s1.setAddress(301,"hanuman gali","Bhopal","462042","M.P.");
     s1.showStudent();
 }
